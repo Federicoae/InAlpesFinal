@@ -52,8 +52,34 @@
 				</div>
 			</div>
 		</div>
-	</header>	
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+			<div class="menu_close_container"><div class="menu_close"></div></div>
+			<div class="logo menu_logo">
+				<a href="#">
+					<div class="logo_container d-flex flex-row align-items-start justify-content-start">
+						<div class="logo_image"><div><img src="images/logo.png" alt=""></div></div>
+					</div>
+				</a>
+			</div>
+			<ul>
+				<li class="menu_item"><a href="index.html">Home</a></li>
+				<li class="menu_item"><a href="about.html">About us</a></li>
+				<li class="menu_item"><a href="#">Speakers</a></li>
+				<li class="menu_item"><a href="#">Tickets</a></li>
+				<li class="menu_item"><a href="news.html">News</a></li>
+				<li class="menu_item"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="menu_phone"><span>call us: </span>652 345 3222 11</div>
+	</div>
+	
 	<!-- Home -->
+
 	<div class="home">
 
 		<!-- Home Slider -->
@@ -68,7 +94,75 @@
 							<div class="row">
 								<div class="col">
 									<div class="slide_content">										
-										<div class="home_title">Creación de Usuario</div>
+										<div class="home_title">Eliminación de Usuario</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_subtitle">super offer</div>
+										<div class="home_title">Villa with sea view</div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li>
+													<div class="home_details_image"><img src="images/icon_1.png" alt=""></div>
+													<span> 650 Ftsq</span>
+												</li>
+												<li>
+													<div class="home_details_image"><img src="images/icon_2.png" alt=""></div>
+													<span> 3 Bedrooms</span>
+												</li>
+												<li>
+													<div class="home_details_image"><img src="images/icon_3.png" alt=""></div>
+													<span> 2 Bathrooms</span>
+												</li>
+											</ul>
+										</div>
+										<div class="home_price">$ 1. 245 999</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_subtitle">super offer</div>
+										<div class="home_title">Villa with sea view</div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li>
+													<div class="home_details_image"><img src="images/icon_1.png" alt=""></div>
+													<span> 650 Ftsq</span>
+												</li>
+												<li>
+													<div class="home_details_image"><img src="images/icon_2.png" alt=""></div>
+													<span> 3 Bedrooms</span>
+												</li>
+												<li>
+													<div class="home_details_image"><img src="images/icon_3.png" alt=""></div>
+													<span> 2 Bathrooms</span>
+												</li>
+											</ul>
+										</div>
+										<div class="home_price">$ 1. 245 999</div>
 									</div>
 								</div>
 							</div>
@@ -90,35 +184,28 @@
                                         <div class="section_subtitle">Unete a nuestra comunidad</div>
 <div class="testimonials">                                    
     <section>
-        <form action="registrarPersona" method="post">
-            <table class="table1"><tr><td>
+        <form action="eliminarInmueble" method="post" onsubmit="return validarModificar();">
+            <table class="table1"><tr><td colspan="2"><strong><p>ELIMINAR INMUEBLE</p></strong></td></tr>
+            <tr><td>
             <div >
-                <p class="form"><select class="button" name="tdoc" id="tdoc">
-                    <option>Seleccionar tipo de documento</option>
-                    <option value="1">Cédula de Ciudadanía</option> 
-                    <option value="2">Cédula de Extranjería</option> 
-                    <option value="3">NIT</option> 
-                    <option value="4">RUT</option> 
-                    </optgroup></select>DOCUMENTO:<input class="button" type="text" name="id" id="ced"></p></td></tr>
-                    <tr><td><p class="form">NOMBRE:<input class="button" type="text" name="nom" id="name">
-                    APELLIDO:<input class="button" type="text" name="ap" id="lastname"></p></td></tr>
-                <tr><td><p class="form">CONTRASEÑA:<input class="button" type="text" name="pass" id="pass"></p></tr></td>
-                <tr><td><p class="form">CORREO:<input class="button" type="text" name="cor" id="mail">
-                CELULAR:<input class="button" type="text" name="cel" id="tel"></p></tr></td>
-                <tr><td><input class="button" type="submit" id="submit" value="REGISTRAR" onclick="crear()"/></p></tr></td>
-                            <script>
-                                function crear(){
-                                    alert("Usuario Creado")
-                                }
-                            </script>
-                </table>
-        </form>
+                <p class="form"><select class="button" name="ubi" id="ubi">
+                    <option>Seleccionar ciudad</option>
+                    <option value="1">Bogota</option> 
+                    <option value="2">Cali</option> 
+                    <option value="3">Medellin</option>
+                    </optgroup></select>DIRECCION:<input class="button" type="text" name="dir" id="dir"></p></td></tr>
+            <tr>
+                        <td colspan="2">
+                            <input class="button" type="submit" id="submit" value="ELIMINAR"/> 
+                        </td>
+
+                    </tr>
+                </table>  
+            </form>
+     
     </section>
 </div>  
-                        <div class="testimonials"><form action="listarPersonas" method="post"><button class="button" type="submit">Lista Clientes</button></form>
-                            <a href="./eliminarCliente.jsp"><button class="button" >Eliminar</button></a>
-                            <a href="./modificarCliente.jsp"><button class="button" >Modificar</button></a>
-                                </div>
+                        <div class="testimonials"><form action="listarInmuebles" method="post"><button class="button" type="submit">Lista Clientes</button></form></div>
 				</div>
 			</div>
 			<div class="row testimonials_row">
