@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/09/2019, 09:27:47 AM
+    Author     : negri
+*/
+
+.form{
+    font-family: cursive;
+    font-size: large;
+    font-weight: bolder;
+    color: goldenrod;
+}
+
+.table1 {
+   border-collapse: separate;
+   border-spacing: 10px;
+   background: transparent bottom left repeat-x;
+   color: #fff;
+   border-radius: 35px 35px 35px 35px; 
+   -moz-border-radius: 35px 35px 35px 35px; 
+   -webkit-border-radius: 35px 35px 35px 35px; 
+   border: 5px solid #5878ca;
+}
+td, tr {
+  background: transparent ;
+  margin: 5px;
+  padding: 5px;
+  font-family: cursive;
+  border-radius: 35px 35px 35px 35px; 
+   -moz-border-radius: 35px 35px 35px 35px; 
+   -webkit-border-radius: 35px 35px 35px 35px; 
+   border: transparent;
+}
+
